@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+
+p {
+    color: #727c87;
+}
+
+h1 {
+    font-size: 35px;
+    color: #40464d;
+}
+
+h2 {
+    font-size: 20px;
+    color: #727c87;
+}
