@@ -12,22 +12,33 @@
     <title>Syihan Muhammad</title>
   </head>
 
-  <body style="width: 100vw; height: 100vh">
+  <body>
 
     <!--splash screen-->
-    <div class="splash container-fluid h-100 collapse show">
-      <div class="row align-items-center h-100">
+    <div class="splash container-fluid collapse" id="splash">
+      <div class="row align-items-center" style="height: 100vh;">
         <div class="col text-center">
             <img class="splash rounded-circle" src="images/profiles/splash.jpg">
             <h1 class="h1-splash">Selamat Datang</h1>
             <h2 class="h2-splash">سلام… Bonjour… Hello…</h2><br>
-            <button class="btn btn-splash text-white pl-5 pr-5"><b>Enter</b></button>
+            <button class="btn btn-splash text-white pl-5 pr-5" data-toggle="collapse" href="#splash, #main"><b>Enter</b></button>
         </div>
       </div>
     </div>
     
-    <div class="main container-fluid h-100 collapse">
-        
+    <!--main screen-->
+    <div class="main container-fluid collapse show" id="main">
+      <div class="row align-items-center" style="height: 100vh;">
+        <div class="row mx-auto justify-content-center" style="width: 50%;">
+          <div class="col-sm-4 text-center">
+            <img class="main" src="images/profiles/main.png">
+          </div>
+          <div class="col-sm-6 text-center">
+            <h1 class="h1-main">SYIHAN MUHAMMAD</h1>
+            <button class="btn btn-splash text-white pl-5 pr-5" data-toggle="collapse" href="#splash, #main"><b>Enter</b></button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="fixed-bottom text-center">
