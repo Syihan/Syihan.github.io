@@ -2,12 +2,10 @@ body {
     margin: 0;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("background.jpg");
-    background-size: cover;
 }
 
 p {
-    color: #727c87;
+    color: white;
 }
 
 h1 {
@@ -15,7 +13,37 @@ h1 {
     color: #40464d;
 }
 
-h2 {
-    font-size: 20px;
-    color: #727c87;
+/* Splash screen */
+div.splash {
+    background-image: url("images/backgrounds/splash.jpg");
+    background-size: cover;
+}
+
+img.splash {
+    width: 25%;
+    min-width: 120px;
+    max-width: 160px;
+}
+
+h1.h1-splash {
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 40px;
+}
+
+h2.h2-splash {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 25px;
+}
+
+button.btn-splash {
+    box-shadow: 2px 2px 4px #000000;
+    background-color: #c55a11;
+}
+
+/* Main screen */
+div.main {
+    background-image: 
 }
