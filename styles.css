@@ -51,6 +51,11 @@ div.main {
     background-size: cover;
 }
 
+div.main-info {
+    min-width: 300px;
+    background-color: rgba(59, 56, 56, 0.5)
+}
+
 img.main {
     width: 100%;
     min-width: 120px;
@@ -65,9 +70,9 @@ h1.h1-main {
     font-size: 50px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 250px) and (max-width: 500px) {
     h1.h1-main {
-        font-size: 8vw;
+        font-size: 9vw;
     }
 }
 
