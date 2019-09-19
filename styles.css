@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: overlay;
 }
 
 p {
@@ -16,9 +17,17 @@ h1 {
 }
 
 /* Splash screen */
-div.splash {
+/* div.splash {
     background-image: url("images/backgrounds/splash.jpg");
     background-size: cover;
+} */
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
 
 img.splash {
@@ -46,10 +55,10 @@ button.btn-splash {
 }
 
 /* Main screen */
-div.main {
+/* div.main {
     background-image: url("images/backgrounds/main.jpg");
     background-size: cover;
-}
+} */
 
 /* div.main-info {
     min-width: 300px;
