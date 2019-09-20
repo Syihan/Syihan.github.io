@@ -7,8 +7,8 @@ body {
   overflow: hidden;
 }
 
-div {
-  overflow: overlay;
+div.page {
+  overflow: auto;
 }
 
 p {
@@ -84,7 +84,31 @@ button.btn-main-nav {
 /* About */
 div.about {
   height: 100vh;
-  background-image: url("images/backgrounds/main.jpg");
+  background-image: url("images/backgrounds/about.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Résumé */
+div.resume {
+  height: 100vh;
+  background-image: url("images/backgrounds/about.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Blog */
+div.blog {
+  height: 100vh;
+  background-image: url("images/backgrounds/about.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Contact */
+div.contact {
+  height: 100vh;
+  background-image: url("images/backgrounds/about.jpg");
   background-position: center;
   background-attachment: fixed;
 }
