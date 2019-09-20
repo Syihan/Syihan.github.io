@@ -68,6 +68,7 @@ h1.h1-main {
 
 div.main-nav {
   max-width: 90vw;
+  min-width: 140px;
   font-size: 30px;
   font-weight: bold;
   color: #ff8040;
@@ -75,6 +76,7 @@ div.main-nav {
 
 button.btn-main-nav {
   background-color: white;
+  box-shadow: 2px 2px 4px #000000;
   border-radius: 50px;
   font-weight: bold;
   font-size: 15px;
@@ -83,7 +85,7 @@ button.btn-main-nav {
 
 /* About */
 div.about {
-  height: 100vh;
+  height: calc(100vh);
   background-image: url("images/backgrounds/about.jpg");
   background-position: center;
   background-attachment: fixed;
@@ -113,20 +115,34 @@ div.contact {
   background-attachment: fixed;
 }
 
+/* Gallery */
+div.gallery {
+  height: 100vh;
+  background-image: url("images/backgrounds/about.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Copyright */
+p.copyright {
+  color: #e3e3e3;
+}
+
 /* Social Media Buttons */
 button.btn-social-media {
   width: 50px;
   height: 50px;
   border-radius: 100%;
+  box-shadow: 2px 2px 4px #000000;
 }
 
 .facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
 .twitter {
-  background: #55ACEE;
+  background: #1da1f2;
   color: white;
 }
 
@@ -141,17 +157,17 @@ button.btn-social-media {
 }
 
 .linkedin {
-  background: #007bb5;
+  background: #0077b5;
   color: white;
 }
 
 .youtube {
-  background: #bb0000;
+  background: #ff0000;
   color: white;
 }
 
 .instagram {
-  background: #125688;
+  background: #e1306c;
   color: white;
 }
 
