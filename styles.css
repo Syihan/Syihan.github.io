@@ -21,6 +21,8 @@ h1 {
 }
 
 #background {
+  min-width:100%;
+  min-height:100%;
   position: fixed;
   left: 0;
   bottom: 0;
