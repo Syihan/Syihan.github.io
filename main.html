@@ -7,36 +7,60 @@
 
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap-social/5.1.1/bootstrap-social.css">
+    <link rel="stylesheet" href="styles2.css">
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+    </style>
 
     <title>Syihan Muhammad</title>
   </head>
 
-  <body style="width: 100vw; height: 100vh">
+  <body style="width: 100vw; height: 100vh;">
 
-    <!--splash screen-->
-    <div class="splash container-fluid h-100 collapse show">
-      <div class="row align-items-center h-100">
-        <div class="col text-center">
-            <img class="splash rounded-circle" src="images/profiles/splash.jpg">
-            <h1 class="h1-splash">Selamat Datang</h1>
-            <h2 class="h2-splash">سلام… Bonjour… Hello…</h2><br>
-            <button class="btn btn-splash text-white pl-5 pr-5"><b>Enter</b></button>
-        </div>
-      </div>
-    </div>
+    <!--video background-->
+    <video playsinline autoplay muted loop id="background">
+      <source src="videos/galaxy.mp4" autoplay="autoplay" loop="loop" type="video/mp4">
+    </video>
     
-    <div class="main container-fluid h-100 collapse">
-        
-    </div>
+    <div class="container h-100">
+      <nav>
+        <div class="row">
+            <a class="logo" href=""><b>SYIHAN</b>MUHAMMAD</a>
+        </div>
+        <div class="row">
+          <a class="link-nav" href="../about"><b>ABOUT</b></a>
+          <a class="link-nav" href="../resume"><b>RESUME</b></a>
+          <a class="link-nav" href="../blog"><b>BLOG</b></a>
+          <a class="link-nav" href="../gallery"><b>GALLERY</b></a>
+        </div>
+      </nav>
 
-    <div class="fixed-bottom text-center">
-      <p>2019 Copyright. All Rights Reserved. </p>
+      <div class="row align-items-center">
+          <h1><b>Hi, I'm Syihan</b></h1>
+      </div>
     </div>
 
     <!-- Bootstrap 4 scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>          <!-- jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> <!-- Popper JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>       <!-- Latest compiled JavaScript -->
+
+    <!-- Functional scripts -->
+    <script>
+      // pause autoplay if prefers-reduced-motion
+      const video = document.getElementById('background-video')
+      if (window.matchMedia('(prefers-reduced-motion)').matches) {
+        video.removeAttribute('autoplay')
+        video.pause()
+      }
+      
+      // tooltips
+      $(document).ready(function(){
+        $('[rel="tooltip"]').tooltip();   
+      });
+    </script>
   </body>
 </html>

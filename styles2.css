@@ -1,0 +1,44 @@
+/* Default */
+body {
+    background-color: #272727;
+    margin: 0;
+    font-size: 16px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+
+nav {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 0;
+    color: white;
+}
+
+a.logo {
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+a.link-nav {
+    margin-right: 50px; 
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    padding: 0;
+    color: white;
+}
+
+#background {
+    min-width:100%;
+    min-height:100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
