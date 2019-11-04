@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 /* Nav bar */
@@ -23,7 +23,7 @@ nav {
 }
 
 a.logo-desktop {
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     text-decoration: none;
     margin-bottom: 15px;
