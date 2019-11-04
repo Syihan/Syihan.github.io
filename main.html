@@ -27,14 +27,14 @@
     </video>
 
     <!--main-->
-    <div class="container" style="height: 100vh;">
+    <div class="container" style="height: 100vh; max-height: 1080px;">
 
-      <!--nav bar-->
-      <nav class="row">
-        <div class="col">
+      <!--nav-desktop-->
+      <nav class="row d-none d-md-flex d-lg-flex">
+        <div class="col animated fadeInDown">
           <div class="row">
             <div class="col mt-5">
-              <a class="logo" href=""><b>SYIHAN</b><span class="logo-lite">MUHAMMAD</span></a>
+              <a class="logo-desktop" href=""><b>SYIHAN</b><span class="logo-lite">MUHAMMAD</span></a>
             </div>
           </div>
           <div class="row mt-2">
@@ -46,13 +46,20 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 animated fadeInRight">
           <img class="mt-5 float-right nav-profile" src="images/profiles/syihan_pittsburgh.png">
         </div>
       </nav>
 
+      <!--nav-mobile-->
+      <nav class="row align-items-center d-sm d-md-none">
+        <div class="col mt-5">
+          <a class="logo-mobile" href=""><b>SYIHAN</b><span class="logo-lite">MUHAMMAD</span></a>
+        </div>
+      </nav>
+
       <!--greeting-->
-      <div class="row h-50 animated fadeIn">
+      <div class="row h-50 animated fadeIn d-none d-md-flex d-lg-flex">
         <div class="col my-auto">
           <div class="row">
             <div class="col">
@@ -64,7 +71,7 @@
               <h2>
                 <span class="typewriter txt-rotate logo-lite" 
                       data-period="2000" 
-                      data-rotate='[ "software engineer", "social advocate", "\"pseudo-policy wonk\"", "cat person", "guy with a vanity website" ]'></span>
+                      data-rotate='[ "software engineer", "aspiring renaissance person", "", "cat person", "guy with a vanity website" ]'></span>
               </h2>
             </div>
           </div>
