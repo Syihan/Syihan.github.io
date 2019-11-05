@@ -9,281 +9,113 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap-social/5.1.1/bootstrap-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="styles.css">
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+    </style>
 
     <title>Syihan Muhammad</title>
   </head>
 
-  <body>
+  <body style="overflow: auto;">
 
-    <video playsinline autoplay muted loop id="background">
-      <source src="videos/galaxy.mp4" autoplay="autoplay" loop="loop" type="video/mp4">
-    </video>
+    <!--hero-->
+    <div class="container" style="height: 100vh; max-height: 1080px;">
 
-    <!--splash screen-->
-    <div class="splash container-fluid collapse show" id="splash">
-      <div class="row align-items-center" style="height: 100vh;">
-        <div class="col text-center">
-            <h1 class="h1-splash">Selamat Datang</h1>
-            <h2 class="h2-splash">سلام… Bonjour…</h2>
-            <button class="btn btn-splash text-white px-4" data-toggle="collapse" href="#splash, #main"><b>Welcome</b></button>
+      <!--video background-->
+      <video playsinline autoplay muted loop poster="images/syihan_haley.jpg" class="background-hero">
+        <source src="videos/galaxy.mp4" autoplay="autoplay" loop="loop" type="video/mp4">
+      </video>
+
+      <!--nav-desktop-->
+      <nav class="row d-none d-md-flex d-lg-flex">
+        <div class="col animated fadeInDown">
+          <div class="row">
+            <div class="col mt-5">
+              <a class="logo-desktop" href=""><b>SYIHAN</b><span class="logo-lite">MUHAMMAD</span></a>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col">
+              <a class="link-nav" href="../about"><b>ABOUT</b></a>
+              <a class="link-nav" href="../resume"><b>RESUME</b></a>
+              <a class="link-nav" href="../blog"><b>BLOG</b></a>
+              <a class="link-nav" href="../gallery"><b>GALLERY</b></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2 animated fadeInRight">
+          <img class="mt-5 nav-profile" src="images/profiles/syihan_pittsburgh.png">
+        </div>
+      </nav>
+
+      <!--nav-mobile-->
+      <nav class="d-sm d-md-none">
+        <div class="row justify-content-center row">
+            <a class="logo-mobile" href=""><b>SYIHAN</b><span class="logo-lite">MUHAMMAD</span></a>
+        </div>
+      </nav>
+
+      <!--hero-desktop-->
+      <div class="row h-50 animated fadeIn d-none d-md-flex d-lg-flex">
+        <div class="col my-auto">
+          <div class="row">
+            <div class="col">
+              <h1 class="hero"><b>Hi, I'm Syihan</b></h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h2>
+                <span class="hero-typewriter txt-rotate logo-lite" 
+                      data-period="2000" 
+                      data-rotate='[ "software engineer", "political junkie", "avid tweeter", "cat person" ]'></span>
+              </h2>
+            </div>
+          </div>
+          
+          <!--social media buttons-->
+          <div class="row mt-2">
+            <div class="col">
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-0 mr-2" title="GitHub" href="https://github.com/syihan" ><i class="fab fa-github"></i></button></a>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="LinkedIn" href="https://www.linkedin.com/in/syihan-muhammad/" ><i class="fab fa-linkedin-in"></i></button></a>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="Twitter" href="https://twitter.com/thatswatsyisaid"><i class="fab fa-twitter"></i></button></a>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="Instagram" href="https://instagram.com/thatswatsyisaid"><i class="fab fa-instagram"></i></button></a>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="Facebook" href="https://www.facebook.com/syihanmuhammad"><i class="fab fa-facebook-f"></i></button></a>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="YouTube" href="https://youtube.com/WriteSinsNotTragedes"><i class="fab fa-youtube"></i></button></a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <!--main screen-->
-    <div class="main container-fluid collapse" id="main">
-      <div class="row align-items-center" style="height: 100vh;">
-        <div class="row mx-auto justify-content-center">
-          <div class="main-info container text-center my-auto">
-            
-            <!--logo-->
-            <div class="container justify-content-center py-2">
-                <img class="main rounded-circle" src="images/icons/signature_square.svg">
-            </div>
-            
-            <!--name-->
-            <div class="container justify-content-center py-2">
-              <h1 class="h1-main">Syihan Muhammad</h1>
-            </div>
 
-            <!--navigation buttons-->
-            <div class="row justify-content-center mx-auto py-2">
-              <div class="col main-nav px-2 py-1">// <button class="btn btn-lg btn-main-nav" data-toggle="collapse" href="#main, #about">about</button></div>
-              <div class="col main-nav px-2 py-1">// <button class="btn btn-lg btn-main-nav" data-toggle="collapse" href="#main, #resume">résumé</button></div>
-              <div class="col main-nav px-2 py-1">// <button class="btn btn-lg btn-main-nav" data-toggle="collapse" href="#main, #blog">blog</button></div>
-              <div class="col main-nav px-2 py-1">// <button class="btn btn-lg btn-main-nav" data-toggle="collapse" href="#main, #contact">contact</button></div>
-              <div class="col main-nav px-2 py-1">// <button class="btn btn-lg btn-main-nav" data-toggle="collapse" href="#main, #gallery">gallery</button></div>
-            </div>
-
-            <!--social media-->
-            <div class="row justify-content-center mx-auto py-2" style="max-width: 90vw;">
-              <div>
-                <a target="_blank" href="https://github.com/syihan"><button type="button" rel="tooltip" data-placement="bottom" class="btn btn-social-media m-2 m-2 github" title="GitHub"><i class="fab fa-github"></i></button></a>
-                <a target="_blank" href="https://www.linkedin.com/in/syihan-muhammad/"><button type="button" rel="tooltip" data-placement="bottom" class="btn btn-social-media m-2 m-2 linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></button></a>
-                <a target="_blank" href="https://twitter.com/thatswatsyisaid"><button type="button" rel="tooltip" data-placement="bottom" class="btn btn-social-media m-2 m-2 twitter" title="Twitter"><i class="fab fa-twitter"></i></button></a>
-              </div>
-              <div>
-                <a target="_blank" href="https://instagram.com/thatswatsyisaid"><button type="button" rel="tooltip" data-placement="bottom" class="btn btn-social-media m-2 m-2 instagram" title="Instagram"><i class="fab fa-instagram"></i></button></a>
-                <a target="_blank" href="https://www.facebook.com/syihanmuhammad"><button type="button" rel="tooltip" data-placement="bottom" class="btn btn-social-media m-2 m-2 facebook" title="Facebook"><i class="fab fa-facebook-f"></i></button></a>
-                <a target="_blank" href="https://youtube.com/WriteSinsNotTragedes"><button type="button" rel="tooltip" data-placement="bottom" class="btn btn-social-media m-2 m-2 youtube" title="YouTube"><i class="fab fa-youtube"></i></button></a>
-              </div>
-            </div>
+      <!--greeting-mobile-->
+      <div class="row h-75 d-sm d-md-none">
+        <div class="col my-auto">
+          <div class="row justify-content-center">
+            <img class="nav-profile" src="images/profiles/syihan_pittsburgh.png">
+          </div>
+          <div class="row justify-content-center">
+            <h1 class="hero"><b>Hi, I'm Syihan</b></h1>
+          </div>
+          <div class="row justify-content-center">
+            <h2>
+              <span class="hero-typewriter txt-rotate logo-lite" 
+                    data-period="2000" 
+                    data-rotate='[ "software engineer", "political junkie", "avid tweeter", "cat person" ]'></span>
+            </h2>
           </div>
         </div>
       </div>
     </div>
 
-    <!--about screen-->
-    <div class="about page container-fluid collapse" id="about">
-      <div class="row align-items-center" style="height: 100vh;">
-        <div class="container">
-          <h1>About Me</h1>
-          <div><button class="btn btn-lg" data-toggle="collapse" data-target="#main, #about">Back</button></div>
-          <br>
-          <div class="alert alert-danger">Under Construction!</div>
-          <div class="alert alert-warning">This page is coming soon...</div>
-
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vehicula ipsum a arcu cursus. Mauris nunc congue nisi vitae suscipit tellus. 
-            Ultrices vitae auctor eu augue. Id donec ultrices tincidunt arcu non sodales neque. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Elementum facilisis leo vel fringilla est ullamcorper 
-            eget nulla facilisi. Amet nisl purus in mollis nunc sed id. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Ultrices 
-            sagittis orci a scelerisque purus semper. Nunc scelerisque viverra mauris in aliquam. Vel elit scelerisque mauris pellentesque. Elit sed vulputate mi sit amet mauris commodo quis. Malesuada proin libero 
-            nunc consequat. Turpis tincidunt id aliquet risus feugiat in ante. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
-            <br><br>
-            Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Vel orci porta non pulvinar neque laoreet suspendisse. Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum. 
-            Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Id porta nibh venenatis cras. Faucibus a pellentesque sit amet porttitor. Magna fermentum iaculis eu non diam phasellus vestibulum 
-            lorem sed. Sit amet volutpat consequat mauris nunc. Nibh sit amet commodo nulla. Scelerisque in dictum non consectetur a erat nam at lectus. Faucibus in ornare quam viverra orci sagittis eu. Mauris ultrices 
-            eros in cursus turpis. Malesuada nunc vel risus commodo viverra maecenas accumsan. Lacus viverra vitae congue eu consequat ac felis donec. Sem et tortor consequat id porta nibh venenatis cras. Ullamcorper 
-            a lacus vestibulum sed arcu.
-            <br><br>
-            Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Sit amet commodo nulla facilisi nullam. Vitae justo eget magna fermentum iaculis eu non. Dui accumsan sit amet nulla facilisi morbi tempus iaculis 
-            urna. Cras adipiscing enim eu turpis. Id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Sed egestas egestas fringilla phasellus faucibus. Convallis convallis tellus id interdum velit 
-            laoreet id donec. Viverra maecenas accumsan lacus vel facilisis volutpat est velit. Scelerisque purus semper eget duis at tellus at urna condimentum.
-            <br><br>
-            Vitae elementum curabitur vitae nunc sed velit dignissim. Luctus accumsan tortor posuere ac ut. Tortor consequat id porta nibh venenatis cras sed felis. Massa ultricies mi quis hendrerit dolor magna eget. Ut
-            morbi tincidunt augue interdum velit euismod. Ultrices eros in cursus turpis massa. Consectetur a erat nam at lectus urna duis. Gravida rutrum quisque non tellus. Aenean sed adipiscing diam donec. Auctor
-            neque vitae tempus quam pellentesque nec nam aliquam. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Magna eget est lorem ipsum dolor sit amet. Bibendum ut tristique et egestas quis ipsum. Odio morbi 
-            quis commodo odio aenean sed adipiscing diam donec. Adipiscing elit duis tristique sollicitudin nibh. Cursus turpis massa tincidunt dui ut ornare. Sagittis purus sit amet volutpat. Mauris ultrices eros in cursus. 
-            In aliquam sem fringilla ut morbi. Eget duis at tellus at urna condimentum mattis.
-            <br><br>
-            Vitae suscipit tellus mauris a diam maecenas sed. Risus nullam eget felis eget nunc lobortis mattis aliquam. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi. Sit amet purus 
-            gravida quis blandit turpis cursus in. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Ut eu sem integer vitae justo eget magna. Dui id ornare arcu odio ut sem nulla pharetra. Pellentesque 
-            dignissim enim sit amet venenatis urna cursus. Volutpat sed cras ornare arcu dui vivamus. Enim diam vulputate ut pharetra sit. Morbi enim nunc faucibus a pellentesque sit. Justo laoreet sit amet cursus sit 
-            amet. Augue mauris augue neque gravida. Sem integer vitae justo eget magna fermentum iaculis. Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!--resume screen-->
-    <div class="resume page container-fluid collapse" id="resume">
-      <div class="row align-items-center" style="height: 100vh;">
-        <div class="container">
-          <h1>Résumé</h1>
-          <div><button class="btn btn-lg" data-toggle="collapse" data-target="#main, #resume">Back</button></div>
-          <br>
-          <div class="alert alert-danger">Under Construction!</div>
-          <div class="alert alert-warning">This page is coming soon...</div>
-
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vehicula ipsum a arcu cursus. Mauris nunc congue nisi vitae suscipit tellus. 
-            Ultrices vitae auctor eu augue. Id donec ultrices tincidunt arcu non sodales neque. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Elementum facilisis leo vel fringilla est ullamcorper 
-            eget nulla facilisi. Amet nisl purus in mollis nunc sed id. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Ultrices 
-            sagittis orci a scelerisque purus semper. Nunc scelerisque viverra mauris in aliquam. Vel elit scelerisque mauris pellentesque. Elit sed vulputate mi sit amet mauris commodo quis. Malesuada proin libero 
-            nunc consequat. Turpis tincidunt id aliquet risus feugiat in ante. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
-            <br><br>
-            Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Vel orci porta non pulvinar neque laoreet suspendisse. Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum. 
-            Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Id porta nibh venenatis cras. Faucibus a pellentesque sit amet porttitor. Magna fermentum iaculis eu non diam phasellus vestibulum 
-            lorem sed. Sit amet volutpat consequat mauris nunc. Nibh sit amet commodo nulla. Scelerisque in dictum non consectetur a erat nam at lectus. Faucibus in ornare quam viverra orci sagittis eu. Mauris ultrices 
-            eros in cursus turpis. Malesuada nunc vel risus commodo viverra maecenas accumsan. Lacus viverra vitae congue eu consequat ac felis donec. Sem et tortor consequat id porta nibh venenatis cras. Ullamcorper 
-            a lacus vestibulum sed arcu.
-            <br><br>
-            Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Sit amet commodo nulla facilisi nullam. Vitae justo eget magna fermentum iaculis eu non. Dui accumsan sit amet nulla facilisi morbi tempus iaculis 
-            urna. Cras adipiscing enim eu turpis. Id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Sed egestas egestas fringilla phasellus faucibus. Convallis convallis tellus id interdum velit 
-            laoreet id donec. Viverra maecenas accumsan lacus vel facilisis volutpat est velit. Scelerisque purus semper eget duis at tellus at urna condimentum.
-            <br><br>
-            Vitae elementum curabitur vitae nunc sed velit dignissim. Luctus accumsan tortor posuere ac ut. Tortor consequat id porta nibh venenatis cras sed felis. Massa ultricies mi quis hendrerit dolor magna eget. Ut
-            morbi tincidunt augue interdum velit euismod. Ultrices eros in cursus turpis massa. Consectetur a erat nam at lectus urna duis. Gravida rutrum quisque non tellus. Aenean sed adipiscing diam donec. Auctor
-            neque vitae tempus quam pellentesque nec nam aliquam. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Magna eget est lorem ipsum dolor sit amet. Bibendum ut tristique et egestas quis ipsum. Odio morbi 
-            quis commodo odio aenean sed adipiscing diam donec. Adipiscing elit duis tristique sollicitudin nibh. Cursus turpis massa tincidunt dui ut ornare. Sagittis purus sit amet volutpat. Mauris ultrices eros in cursus. 
-            In aliquam sem fringilla ut morbi. Eget duis at tellus at urna condimentum mattis.
-            <br><br>
-            Vitae suscipit tellus mauris a diam maecenas sed. Risus nullam eget felis eget nunc lobortis mattis aliquam. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi. Sit amet purus 
-            gravida quis blandit turpis cursus in. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Ut eu sem integer vitae justo eget magna. Dui id ornare arcu odio ut sem nulla pharetra. Pellentesque 
-            dignissim enim sit amet venenatis urna cursus. Volutpat sed cras ornare arcu dui vivamus. Enim diam vulputate ut pharetra sit. Morbi enim nunc faucibus a pellentesque sit. Justo laoreet sit amet cursus sit 
-            amet. Augue mauris augue neque gravida. Sem integer vitae justo eget magna fermentum iaculis. Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!--blog screen-->
-    <div class="blog page container-fluid collapse" id="blog">
-      <div class="row align-items-center" style="height: 100vh;">
-        <div class="container">
-          <h1>Blog</h1>
-          <div><button class="btn btn-lg" data-toggle="collapse" data-target="#main, #blog">Back</button></div>
-          <br>
-          <div class="alert alert-danger">Under Construction!</div>
-          <div class="alert alert-warning">This page is coming soon...</div>
-
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vehicula ipsum a arcu cursus. Mauris nunc congue nisi vitae suscipit tellus. 
-            Ultrices vitae auctor eu augue. Id donec ultrices tincidunt arcu non sodales neque. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Elementum facilisis leo vel fringilla est ullamcorper 
-            eget nulla facilisi. Amet nisl purus in mollis nunc sed id. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Ultrices 
-            sagittis orci a scelerisque purus semper. Nunc scelerisque viverra mauris in aliquam. Vel elit scelerisque mauris pellentesque. Elit sed vulputate mi sit amet mauris commodo quis. Malesuada proin libero 
-            nunc consequat. Turpis tincidunt id aliquet risus feugiat in ante. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
-            <br><br>
-            Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Vel orci porta non pulvinar neque laoreet suspendisse. Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum. 
-            Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Id porta nibh venenatis cras. Faucibus a pellentesque sit amet porttitor. Magna fermentum iaculis eu non diam phasellus vestibulum 
-            lorem sed. Sit amet volutpat consequat mauris nunc. Nibh sit amet commodo nulla. Scelerisque in dictum non consectetur a erat nam at lectus. Faucibus in ornare quam viverra orci sagittis eu. Mauris ultrices 
-            eros in cursus turpis. Malesuada nunc vel risus commodo viverra maecenas accumsan. Lacus viverra vitae congue eu consequat ac felis donec. Sem et tortor consequat id porta nibh venenatis cras. Ullamcorper 
-            a lacus vestibulum sed arcu.
-            <br><br>
-            Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Sit amet commodo nulla facilisi nullam. Vitae justo eget magna fermentum iaculis eu non. Dui accumsan sit amet nulla facilisi morbi tempus iaculis 
-            urna. Cras adipiscing enim eu turpis. Id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Sed egestas egestas fringilla phasellus faucibus. Convallis convallis tellus id interdum velit 
-            laoreet id donec. Viverra maecenas accumsan lacus vel facilisis volutpat est velit. Scelerisque purus semper eget duis at tellus at urna condimentum.
-            <br><br>
-            Vitae elementum curabitur vitae nunc sed velit dignissim. Luctus accumsan tortor posuere ac ut. Tortor consequat id porta nibh venenatis cras sed felis. Massa ultricies mi quis hendrerit dolor magna eget. Ut
-            morbi tincidunt augue interdum velit euismod. Ultrices eros in cursus turpis massa. Consectetur a erat nam at lectus urna duis. Gravida rutrum quisque non tellus. Aenean sed adipiscing diam donec. Auctor
-            neque vitae tempus quam pellentesque nec nam aliquam. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Magna eget est lorem ipsum dolor sit amet. Bibendum ut tristique et egestas quis ipsum. Odio morbi 
-            quis commodo odio aenean sed adipiscing diam donec. Adipiscing elit duis tristique sollicitudin nibh. Cursus turpis massa tincidunt dui ut ornare. Sagittis purus sit amet volutpat. Mauris ultrices eros in cursus. 
-            In aliquam sem fringilla ut morbi. Eget duis at tellus at urna condimentum mattis.
-            <br><br>
-            Vitae suscipit tellus mauris a diam maecenas sed. Risus nullam eget felis eget nunc lobortis mattis aliquam. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi. Sit amet purus 
-            gravida quis blandit turpis cursus in. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Ut eu sem integer vitae justo eget magna. Dui id ornare arcu odio ut sem nulla pharetra. Pellentesque 
-            dignissim enim sit amet venenatis urna cursus. Volutpat sed cras ornare arcu dui vivamus. Enim diam vulputate ut pharetra sit. Morbi enim nunc faucibus a pellentesque sit. Justo laoreet sit amet cursus sit 
-            amet. Augue mauris augue neque gravida. Sem integer vitae justo eget magna fermentum iaculis. Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!--contact screen-->
-    <div class="contact page container-fluid collapse" id="contact">
-      <div class="row align-items-center" style="height: 100vh;">
-        <div class="container">
-          <h1>Contact Me</h1>
-          <div><button class="btn btn-lg" data-toggle="collapse" data-target="#main, #contact">Back</button></div>
-          <br>
-          <div class="alert alert-danger">Under Construction!</div>
-          <div class="alert alert-warning">This page is coming soon...</div>
-
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vehicula ipsum a arcu cursus. Mauris nunc congue nisi vitae suscipit tellus. 
-            Ultrices vitae auctor eu augue. Id donec ultrices tincidunt arcu non sodales neque. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Elementum facilisis leo vel fringilla est ullamcorper 
-            eget nulla facilisi. Amet nisl purus in mollis nunc sed id. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Ultrices 
-            sagittis orci a scelerisque purus semper. Nunc scelerisque viverra mauris in aliquam. Vel elit scelerisque mauris pellentesque. Elit sed vulputate mi sit amet mauris commodo quis. Malesuada proin libero 
-            nunc consequat. Turpis tincidunt id aliquet risus feugiat in ante. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
-            <br><br>
-            Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Vel orci porta non pulvinar neque laoreet suspendisse. Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum. 
-            Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Id porta nibh venenatis cras. Faucibus a pellentesque sit amet porttitor. Magna fermentum iaculis eu non diam phasellus vestibulum 
-            lorem sed. Sit amet volutpat consequat mauris nunc. Nibh sit amet commodo nulla. Scelerisque in dictum non consectetur a erat nam at lectus. Faucibus in ornare quam viverra orci sagittis eu. Mauris ultrices 
-            eros in cursus turpis. Malesuada nunc vel risus commodo viverra maecenas accumsan. Lacus viverra vitae congue eu consequat ac felis donec. Sem et tortor consequat id porta nibh venenatis cras. Ullamcorper 
-            a lacus vestibulum sed arcu.
-            <br><br>
-            Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Sit amet commodo nulla facilisi nullam. Vitae justo eget magna fermentum iaculis eu non. Dui accumsan sit amet nulla facilisi morbi tempus iaculis 
-            urna. Cras adipiscing enim eu turpis. Id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Sed egestas egestas fringilla phasellus faucibus. Convallis convallis tellus id interdum velit 
-            laoreet id donec. Viverra maecenas accumsan lacus vel facilisis volutpat est velit. Scelerisque purus semper eget duis at tellus at urna condimentum.
-            <br><br>
-            Vitae elementum curabitur vitae nunc sed velit dignissim. Luctus accumsan tortor posuere ac ut. Tortor consequat id porta nibh venenatis cras sed felis. Massa ultricies mi quis hendrerit dolor magna eget. Ut
-            morbi tincidunt augue interdum velit euismod. Ultrices eros in cursus turpis massa. Consectetur a erat nam at lectus urna duis. Gravida rutrum quisque non tellus. Aenean sed adipiscing diam donec. Auctor
-            neque vitae tempus quam pellentesque nec nam aliquam. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Magna eget est lorem ipsum dolor sit amet. Bibendum ut tristique et egestas quis ipsum. Odio morbi 
-            quis commodo odio aenean sed adipiscing diam donec. Adipiscing elit duis tristique sollicitudin nibh. Cursus turpis massa tincidunt dui ut ornare. Sagittis purus sit amet volutpat. Mauris ultrices eros in cursus. 
-            In aliquam sem fringilla ut morbi. Eget duis at tellus at urna condimentum mattis.
-            <br><br>
-            Vitae suscipit tellus mauris a diam maecenas sed. Risus nullam eget felis eget nunc lobortis mattis aliquam. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi. Sit amet purus 
-            gravida quis blandit turpis cursus in. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Ut eu sem integer vitae justo eget magna. Dui id ornare arcu odio ut sem nulla pharetra. Pellentesque 
-            dignissim enim sit amet venenatis urna cursus. Volutpat sed cras ornare arcu dui vivamus. Enim diam vulputate ut pharetra sit. Morbi enim nunc faucibus a pellentesque sit. Justo laoreet sit amet cursus sit 
-            amet. Augue mauris augue neque gravida. Sem integer vitae justo eget magna fermentum iaculis. Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!--contact screen-->
-    <div class="gallery page container-fluid collapse" id="gallery">
-      <div class="row align-items-center" style="height: 100vh;">
-        <div class="container">
-          <h1>Gallery</h1>
-          <div><button class="btn btn-lg" data-toggle="collapse" data-target="#main, #gallery">Back</button></div>
-          <br>
-          <div class="alert alert-danger">Under Construction!</div>
-          <div class="alert alert-warning">This page is coming soon...</div>
-
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vehicula ipsum a arcu cursus. Mauris nunc congue nisi vitae suscipit tellus. 
-            Ultrices vitae auctor eu augue. Id donec ultrices tincidunt arcu non sodales neque. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Elementum facilisis leo vel fringilla est ullamcorper 
-            eget nulla facilisi. Amet nisl purus in mollis nunc sed id. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Ultrices 
-            sagittis orci a scelerisque purus semper. Nunc scelerisque viverra mauris in aliquam. Vel elit scelerisque mauris pellentesque. Elit sed vulputate mi sit amet mauris commodo quis. Malesuada proin libero 
-            nunc consequat. Turpis tincidunt id aliquet risus feugiat in ante. Fringilla ut morbi tincidunt augue interdum velit euismod in. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
-            <br><br>
-            Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Vel orci porta non pulvinar neque laoreet suspendisse. Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum. 
-            Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Id porta nibh venenatis cras. Faucibus a pellentesque sit amet porttitor. Magna fermentum iaculis eu non diam phasellus vestibulum 
-            lorem sed. Sit amet volutpat consequat mauris nunc. Nibh sit amet commodo nulla. Scelerisque in dictum non consectetur a erat nam at lectus. Faucibus in ornare quam viverra orci sagittis eu. Mauris ultrices 
-            eros in cursus turpis. Malesuada nunc vel risus commodo viverra maecenas accumsan. Lacus viverra vitae congue eu consequat ac felis donec. Sem et tortor consequat id porta nibh venenatis cras. Ullamcorper 
-            a lacus vestibulum sed arcu.
-            <br><br>
-            Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Sit amet commodo nulla facilisi nullam. Vitae justo eget magna fermentum iaculis eu non. Dui accumsan sit amet nulla facilisi morbi tempus iaculis 
-            urna. Cras adipiscing enim eu turpis. Id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Sed egestas egestas fringilla phasellus faucibus. Convallis convallis tellus id interdum velit 
-            laoreet id donec. Viverra maecenas accumsan lacus vel facilisis volutpat est velit. Scelerisque purus semper eget duis at tellus at urna condimentum.
-            <br><br>
-            Vitae elementum curabitur vitae nunc sed velit dignissim. Luctus accumsan tortor posuere ac ut. Tortor consequat id porta nibh venenatis cras sed felis. Massa ultricies mi quis hendrerit dolor magna eget. Ut
-            morbi tincidunt augue interdum velit euismod. Ultrices eros in cursus turpis massa. Consectetur a erat nam at lectus urna duis. Gravida rutrum quisque non tellus. Aenean sed adipiscing diam donec. Auctor
-            neque vitae tempus quam pellentesque nec nam aliquam. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Magna eget est lorem ipsum dolor sit amet. Bibendum ut tristique et egestas quis ipsum. Odio morbi 
-            quis commodo odio aenean sed adipiscing diam donec. Adipiscing elit duis tristique sollicitudin nibh. Cursus turpis massa tincidunt dui ut ornare. Sagittis purus sit amet volutpat. Mauris ultrices eros in cursus. 
-            In aliquam sem fringilla ut morbi. Eget duis at tellus at urna condimentum mattis.
-            <br><br>
-            Vitae suscipit tellus mauris a diam maecenas sed. Risus nullam eget felis eget nunc lobortis mattis aliquam. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi. Sit amet purus 
-            gravida quis blandit turpis cursus in. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Ut eu sem integer vitae justo eget magna. Dui id ornare arcu odio ut sem nulla pharetra. Pellentesque 
-            dignissim enim sit amet venenatis urna cursus. Volutpat sed cras ornare arcu dui vivamus. Enim diam vulputate ut pharetra sit. Morbi enim nunc faucibus a pellentesque sit. Justo laoreet sit amet cursus sit 
-            amet. Augue mauris augue neque gravida. Sem integer vitae justo eget magna fermentum iaculis. Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="fixed-bottom text-center">
-      <p class="copyright">2019 Copyright. All Rights Reserved. </p>
+    <div class="bg-white">
+      POP
     </div>
 
     <!-- Bootstrap 4 scripts -->
+    <script src="typewriter.js"></script>                                                             <!-- typewriter effect -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>          <!-- jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> <!-- Popper JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>       <!-- Latest compiled JavaScript -->
