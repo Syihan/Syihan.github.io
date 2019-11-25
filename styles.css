@@ -25,6 +25,7 @@ a:hover {
 }
 
 div.hero {
+    min-height: 400px;
     height: 100vh;
     max-width: 1200px;
 }
@@ -33,7 +34,7 @@ div.content {
     display: block;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0px;
 }
 
 /* Nav bar */
