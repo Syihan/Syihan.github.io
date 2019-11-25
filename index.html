@@ -21,7 +21,8 @@
 
   <body>
 
-    <div style="height: 100vh;">
+    <!--hero-->
+    <div class="hero content">
 
       <!--video background-->
       <video playsinline autoplay muted loop poster="images/syihan_haley.jpg" class="background-hero">
@@ -36,13 +37,13 @@
               <a class="logo-desktop" href=""><b>SYIHAN</b><span class="logo-lite">MUHAMMAD</span></a>
             </div>
             <div class="row">
-              <a class="link-nav" href="../about"><b>ABOUT</b></a>
+              <a class="link-nav" href="#about"><b>ABOUT</b></a>
               <a class="link-nav" href="../resume"><b>RESUME</b></a>
               <a class="link-nav" href="../blog"><b>BLOG</b></a>
               <a class="link-nav" href="../gallery"><b>GALLERY</b></a>
             </div>
           </div>
-          <div class="col-sm-2 mt-5">
+          <div class="col-sm-1.5 mt-5">
             <img class=" nav-profile" src="images/profiles/syihan_pittsburgh.png">
           </div>
         </div>
@@ -70,7 +71,8 @@
               </h2>
             </div>
             <div class="row">
-              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-0 mr-2" title="GitHub" href="https://github.com/syihan" ><i class="fab fa-github"></i></a>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-0 mr-2" title="Email" href="mailto:syihan.muhammad@gmail.com" ><i class="fas fa-envelope"></i></a>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="GitHub" href="https://github.com/syihan" ><i class="fab fa-github"></i></a>
               <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="LinkedIn" href="https://www.linkedin.com/in/syihan-muhammad/" ><i class="fab fa-linkedin-in"></i></a>
               <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="Twitter" href="https://twitter.com/thatswatsyisaid"><i class="fab fa-twitter"></i></a>
               <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="Instagram" href="https://instagram.com/thatswatsyisaid"><i class="fab fa-instagram"></i></a>
@@ -101,24 +103,30 @@
               </h2>
             </div>
             <div class="row justify-content-center">
-                <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-0 mr-2" title="GitHub" href="https://github.com/syihan" ><i class="fab fa-github"></i></a>
-                <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="LinkedIn" href="https://www.linkedin.com/in/syihan-muhammad/" ><i class="fab fa-linkedin-in"></i></a>
-                <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="Twitter" href="https://twitter.com/thatswatsyisaid"><i class="fab fa-twitter"></i></a>
-                <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="Instagram" href="https://instagram.com/thatswatsyisaid"><i class="fab fa-instagram"></i></a>
-                <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="Facebook" href="https://www.facebook.com/syihanmuhammad"><i class="fab fa-facebook-f"></i></a>
-                <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="YouTube" href="https://youtube.com/WriteSinsNotTragedes"><i class="fab fa-youtube"></i></a>
-              </div>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-0 mr-2" title="Email" href="mailto:syihan.muhammad@gmail.com" ><i class="fas fa-envelope"></i></a>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="GitHub" href="https://github.com/syihan" ><i class="fab fa-github"></i></a>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="LinkedIn" href="https://www.linkedin.com/in/syihan-muhammad/" ><i class="fab fa-linkedin-in"></i></a>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="Twitter" href="https://twitter.com/thatswatsyisaid"><i class="fab fa-twitter"></i></a>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="Instagram" href="https://instagram.com/thatswatsyisaid"><i class="fab fa-instagram"></i></a>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="Facebook" href="https://www.facebook.com/syihanmuhammad"><i class="fab fa-facebook-f"></i></a>
+              <a target="_blank" rel="tooltip" data-placement="bottom" class="hero-soc-med-links ml-2 mr-2" title="YouTube" href="https://youtube.com/WriteSinsNotTragedes"><i class="fab fa-youtube"></i></a>
+            </div>
           </div>
         </div>
       </div>
 
-      <!--chevron-->
-      <!-- <div class="row justify-content-center align-items-end animated fadeInDown">
-        <h1 class="text-white"><i class="fas fa-chevron-down"></i></h1>
-      </div> -->
+      <!--chevron-desktop-->
+      <div class="row justify-content-center align-items-end animated fadeInDown h-25 d-none d-md-flex d-lg-flex">
+        <a href="#about"><h1 class="text-white"><i class="fas fa-chevron-down"></i></h1></a>
+      </div>
+
+      <!--chevron-mobile-->
+      <div class="row justify-content-center align-items-end animated fadeInDown d-sm d-md-none">
+        <a href="#about"><h1 class="text-white"><i class="fas fa-chevron-down"></i></h1></a>
+      </div>
     </div>
 
-    <div class="bg-white">
+    <div class="bg-white" id="about" style="height: 100vh;">
       [About section is under construction]
     </div>
 
